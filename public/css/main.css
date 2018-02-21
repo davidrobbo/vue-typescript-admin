@@ -1,0 +1,9 @@
+.inline-block {
+  display: inline-block;
+}
+#app {
+  overflow-x: hidden;
+}
+.tippy-popper {
+  z-index: 11000 !important;
+}

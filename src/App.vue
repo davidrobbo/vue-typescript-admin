@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
-
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+import Layout from './views/layout/Layout';
+@Component({ components: { Layout } })
+export default class App extends Vue {
+}
+</script>
 <style>
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
