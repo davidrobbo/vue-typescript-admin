@@ -1,4 +1,4 @@
-export defult interface MenuItemChildren {
+export default interface MenuItemChildren {
   title: string;
   to: string;
 }

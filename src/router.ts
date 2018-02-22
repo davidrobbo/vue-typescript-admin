@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Layout from '@/views/layout/Layout';
-import Dashboard from '@/views/dashboard';
-import Login from '@/views/Login'
+import Layout from '@/views/layout/Layout.vue';
+import Dashboard from '@/views/dashboard/index.vue';
+import Login from '@/views/Login.vue'
 
 
 Vue.use(Router);

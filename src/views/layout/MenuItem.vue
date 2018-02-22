@@ -16,16 +16,16 @@
 
 <script lang="ts">
 import { Component, Emit, Vue, Prop } from 'vue-property-decorator';
-import MenuItemInterface from '@/interfaces/MenuItem';
+import MenuItemInterface from '@/interfaces/MenuItem.ts';
 
 @Component
 export default class MenuItem extends Vue {
 
     @Prop({ required: true })
-    menuItem: MenuItemInterface;
+    menuItem!: MenuItemInterface;
 
     @Prop({ required: true })
-    openMenuItem: string;
+    openMenuItem!: string;
 
     get isOpen (): boolean {
       return this.menuItem.title === this.openMenuItem;

@@ -29,10 +29,10 @@ import { Component, Emit, Vue, Prop } from 'vue-property-decorator';
 export default class TopNav extends Vue {
 
   @Prop({ required: true })
-  leftMenuOpen: boolean;
+  leftMenuOpen!: boolean;
 
   @Prop({ required: true })
-  rightMenuOpen: boolean;
+  rightMenuOpen!: boolean;
 
   /**
    * Data
@@ -42,7 +42,7 @@ export default class TopNav extends Vue {
    * Methods
    */
   @Emit('updateActive')
-  updateActive (dir): void {}
+  updateActive (dir: string): void {}
 
   logout (): void { this.$router.push({ path: '/login' }) }
 }

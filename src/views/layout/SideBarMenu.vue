@@ -17,7 +17,9 @@
 
 <script lang="ts">
 import { Component, Emit, Vue, Prop } from 'vue-property-decorator';
-import MenuItem from './MenuItem';
+import MenuItem from './MenuItem.vue';
+import MenuItemI from '@/interfaces/MenuItem.ts';
+
 @Component({ components: { MenuItem } })
 export default class SideBarMenu extends Vue {
 
@@ -25,7 +27,7 @@ export default class SideBarMenu extends Vue {
    * Data
    */
    openItem: string;
-   menuItems: array;
+   menuItems: Array<MenuItemI>;
 
    constructor () {
      super();

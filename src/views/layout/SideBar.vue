@@ -5,7 +5,7 @@
 </template>
 <script lang="ts">
 import { Component, Emit, Vue, Prop } from 'vue-property-decorator';
-import Menu from './SideBarMenu';
+import Menu from './SideBarMenu.vue';
 @Component({ components: { Menu } })
 export default class SideBar extends Vue {
 

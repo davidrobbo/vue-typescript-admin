@@ -11,7 +11,7 @@
         </el-breadcrumb-item>
       </el-breadcrumb>
       <div style="background: #eff1f5;text-align:left; padding: 5px 10px;">
-        <h3>{{ $route.name }} <small>{{ $route.meta.description }}</small></h3> 
+        <h3>{{ $route.name }} <small>{{ $route.meta.description }}</small></h3>
       </div>
       <router-view style="min-height:85vh; background: #eff1f5;">
       </router-view>
@@ -21,9 +21,9 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import TopNav from './TopNav';
-import SideBar from './SideBar';
-import RightSidebar from './RightSidebar';
+import TopNav from './TopNav.vue';
+import SideBar from './SideBar.vue';
+import RightSidebar from './RightSidebar.vue';
 @Component({ components: { TopNav, SideBar, RightSidebar } })
 export default class Layout extends Vue {
 
@@ -42,7 +42,7 @@ export default class Layout extends Vue {
   /**
    * Methods
    */
-   updateActive (dir): void {
+   updateActive (dir: string): void {
 
      switch (dir) {
        case 'left':

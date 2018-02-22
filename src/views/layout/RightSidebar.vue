@@ -12,7 +12,7 @@ import { Component, Emit, Vue, Prop } from 'vue-property-decorator';
 export default class RightSidebar extends Vue {
 
   @Prop({ required: true })
-  rightMenuOpen: boolean;
+  rightMenuOpen!: boolean;
 
   /**
    * Data
